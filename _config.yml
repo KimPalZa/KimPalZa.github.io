@@ -1,68 +1,58 @@
-title: wu-kan # 站点标题
-description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU第6年<br/>
-  水野爱<br/>
-  田宫例四驱车<br/>
-  <a href="mailto:i@wu-kan.cn">
+title: PalZa # 사이트 제목
+description: | # 아바타 뒤에 있는 정보(html 형식), <br/>는 줄바꿈을 나타냅니다.
+  KimPalZa<br/>
+  내 팔자에 주러리<br/>
+  <a href="me@palza.org">
     <i class="fa-solid fa-envelope"></i>
   </a>
-  <a href="https://github.com/wu-kan">
+  <a href="https://github.com/kimpalza">
     <i class="fa-brands fa-github"></i>
   </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fa-solid fa-smile"></i>
-  </a>
-  <a href="https://space.bilibili.com/166390020">
-    <i class="fa-brands fa-bilibili"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
-    <i class="fa-brands fa-zhihu"></i>
-  </a>
   <br/>
-url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
-baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+url: https:/https://kimpalza.github.io/ # 你的域名，例如 https://wu-kan.github.io
+baseurl: "" # 블로그가 특정 디렉터리에 구축되어 있는 경우 여기에 디렉터리 이름을 추가하고 아래에 구성된 모든 링크의 '/assets' 앞에도 추가하세요. 즉, '/your_baseurl/assets'입니다. 이 항목 끝에는 '/'가 없어야 합니다.
 
-defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
+defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/> 기능을 사용하여 모든 구성 옵션을 구성하세요.
   - scope:
-      path: "" # an empty string here means all files in the project
-    values: # 以下配置项也可以在任意页面自定义
-      jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
-        comments: # 留言页，请先修改这里，确保使用的是你自己的repo！参照<https://utteranc.es/>
-          append: |
-            <script
-              repo="wu-kan/utterances-storage"
-              src="https://utteranc.es/client.js"
-              issue-term="url"
-              theme="github-light"
-              crossorigin="anonymous"
-              async="async"
-            ></script>
+      path: "" # 여기서 빈 문자열은 프로젝트의 모든 파일을 의미합니다.
+    values: # 다음 구성 항목은 모든 페이지에서 사용자 정의할 수도 있습니다.
+      jekyll-theme-WuK: # 내 테마의 사용자 정의 스타일은 모두 이 네임스페이스에 있습니다.
+#        comments: # 메시지 페이지를 먼저 수정하여 자신의 저장소를 사용하고 있는지 확인하세요! <https://utteranc.es/>를 참고하세요.
+#          append: |
+#            <script
+#              repo="wu-kan/utterances-storage"
+#              src="https://utteranc.es/client.js"
+#              issue-term="url"
+#              theme="github-dark" 
+#              crossorigin="anonymous"
+#              async="async"
+#            ></script>
         default:
           body:
-            theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: true # 开启后sidebar在右边，反之左边
-            sidebar-overlay: true # 开启后正文不随sidebar移动而移动
-          html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
-          sidebar: # 此配置项下是一些关于侧边栏的配置
-            disable: false # 是否不显示sidebar
-            avatar: # 侧边栏显示的头像
+            theme-base: theme-base-0f # 선택적 테마 색상에는 08~0f가 포함됩니다. <https://github.com/poole/lanyon>을 참조하세요.
+            layout-reverse: true # 열면 사이드바가 오른쪽에 있고, 그렇지 않으면 왼쪽에 있습니다.
+            sidebar-overlay: true # 이 기능을 켜면 사이드바의 움직임에 따라 텍스트가 움직이지 않습니다.
+          html_lang: ko # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
+          sidebar: # 이 구성 항목 아래에는 사이드바에 대한 일부 구성이 있습니다.
+            disable: false # 사이드바 표시 여부
+            avatar: # 사이드바에 표시된 아바타
               enable: true
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320 # 头像的地址
-            nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
-              - title: '<i class="fa-solid fa-home fa-fw"></i> 首页'
+              img: https://avatars.githubusercontent.com/u/112746031?v=4 # 아바타의 주소
+            nav: # 탐색 섹션의 콘텐츠에 대해 텍스트, 아이콘(fontawesome에서 제공) 및 해당 링크를 직접 추가할 수도 있습니다.
+              - title: '<i class="fa-solid fa-home fa-fw"></i> Home'
                 href: /
-              - title: '<i class="fa-solid fa-comment fa-fw"></i> 留言'
-                href: /comments/
-              - title: '<i class="fa-solid fa-archive fa-fw"></i> 归档'
+#              - title: '<i class="fa-solid fa-comment fa-fw"></i> comments'
+#                href: /comments/
+              - title: '<i class="fa-solid fa-archive fa-fw"></i> Archive'
                 href: /archive/
-              - title: '<i class="fa-solid fa-tags fa-fw"></i> 标签'
+              - title: '<i class="fa-solid fa-tags fa-fw"></i> Label'
                 href: /tags/
-              - title: '<i class="fa-solid fa-coffee fa-fw"></i> 打赏'
-                href: /merger/
-            simple_jekyll_search: # 侧边栏的全站搜索
+              #- title: '<i class="fa-solid fa-coffee fa-fw"></i> Reward'
+              #  href: /merger/
+            simple_jekyll_search: # 사이드바에서 사이트 전체 검색
               enable: true
-              full_text_search: false # 可能导致缓慢的搜索和加载
-              append: | # 如果看不懂就不改
+              full_text_search: false # 검색 및 로딩 속도가 느려질 수 있음
+              append: | # 이해가 안 되시면 바꾸지 마세요.
                 <style>
                   #sidebar-search-input {
                     background: none;
@@ -80,7 +70,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 </style>
                 <input
                   id="sidebar-search-input"
-                  placeholder="搜索博文"
+                  placeholder="게시물 검색"
                 />
                 <ol
                   id="sidebar-search-results-container"
@@ -98,9 +88,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       fuzzy: true
                     })'
                 ></script>
-            jekyll-toc: # 侧边栏的目录插件，https://github.com/allejo/jekyll-toc
+            jekyll-toc: # 사이드바용 목차 플러그인，https://github.com/allejo/jekyll-toc
               enable: true
-              prepend: | # 目录过长时自动折叠
+              prepend: | # 디렉토리가 너무 길면 자동으로 축소
                 <style>
                   #toc {
                     overflow: hidden hidden;
@@ -111,8 +101,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 </style>
             append_to_sidebar:
-              #- <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script> # 点击空白处而非按钮从而关闭侧边栏的插件，可选
-              - | # 侧边栏使用主题色
+              #- <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script> # 버튼 대신 빈 공간을 클릭하여 사이드바를 닫는 위젯, 선택사항
+              - | # 사이드바에 테마 색상 사용
                 <style>
                   #sidebar-checkbox:checked ~ .sidebar-toggle,
                   .sidebar,
@@ -120,7 +110,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     background-color: var(--theme-base-color);
                   }
                 </style>
-              - | # 修复点击侧边栏按钮回到顶部的问题
+              - | # 사이드바 버튼을 클릭하여 상단으로 돌아가는 문제 수정
                 <style>
                   .sidebar-checkbox {
                     display: none;
@@ -130,7 +120,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     background: none;
                   }
                 </style>
-              - | # 修复侧边栏特定情况下抖动的问题，感谢 [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
+              - | # 특정 상황에서 사이드바가 흔들리는 문제를 해결했습니다. 감사합니다. [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
                 <style>
                   .sidebar {
                     overflow: hidden;
@@ -140,7 +130,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     overflow-y: scroll; 
                   }
                 </style>
-              - | # 侧边栏头像效果
+              - | # 사이드바 아바타 효과
                 <style>
                   .effect {
                     margin: 1rem;
@@ -171,7 +161,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     transform: rotate3d(0, 1, 0, -180deg);
                   }
                 </style>
-              - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
+              - | # 실행시간은 마지막 3번째 줄의 시간을 자신의 홈페이지 구축시간으로 변경하시면 되며, 형식은 위와 동일하며, 필요없으시면 삭제하시면 됩니다.
                 <div>
                   <i class="fa-solid fa-cog fa-spin fa-fw"></i>
                   <span id="run_time_day">
@@ -214,63 +204,63 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "12/09/2023 23:42:42")// 이제 첫 번째 CSDN 블로그를 만들 시간입니다.
                   </script>
                 </div>
-              - | # 不蒜子页面统计，看不懂可不改
+              - | # 페이지 통계가 없습니다. 이해가 되지 않으면 변경하지 마세요.
                 <div>
                   <div>
                     <i class="fa-solid fa-eye fa-fw"></i>
                     <span id="busuanzi_value_page_pv">
                       <i class="fa-solid fa-spinner fa-pulse"></i>
-                    </span>次
+                    </span>
                   </div>
                   <div>
                     <i class="fa-solid fa-paw fa-fw"></i>
                     <span id="busuanzi_value_site_pv">
                       <i class="fa-solid fa-spinner fa-pulse"></i>
-                    </span>枚
+                    </span>
                   </div>
                   <div>
                     <i class="fa-solid fa-user-friends fa-fw"></i>
                     <span id="busuanzi_value_site_uv">
                       <i class="fa-solid fa-spinner fa-pulse"></i>
-                    </span>人
+                    </span>
                   </div>
                   <script
                     src='https://cdn.jsdelivr.net/npm/busuanzi@2.3/bsz.pure.mini.js'
                     async='async'
                   ></script>
                 </div>
-              - | # 觉得我的主题好用的话，让更多的人知道它吧！
+              - | # 제 테마가 유용하다고 생각하시면 더 많은 사람들에게 알려주세요!
                 <div>
                   <i class="fa-solid fa-thumbs-up fa-fw"></i>
                   <a href="https://jekyll-theme-WuK.wu-kan.cn">
                     jekyll-theme-WuK
                   </a>
                 </div>
-              - | # Copyright声明
+              - | # 저작권 진술
                 <div>
                   <i class="fa-solid fa-copyright fa-fw"></i>
                   2017-2022 WuK
                 </div>
-            wordcount: # 全站字数统计
-              enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
+            wordcount: # 사이트 전체 단어 수 통계
+              enable: false # 로컬 디버깅 중에는 끄는 것이 좋습니다. 이는 사이트 생성 속도에 큰 영향을 미칩니다. (필요한 시간은 블로그 게시물 수의 제곱에 비례합니다.)
               prepend: <i class="fa-solid fa-user-edit fa-fw"></i>
-              kilo: 千
-              unit: 字
-          append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
-            - | # jsdelivr 防挂脚本，来自 https://github.com/PipecraftNet/jsdelivr-auto-fallback/blob/0.2.2/index.min.js
+              kilo: 천
+              unit: 단위
+          append_to_head: # HTML을 삽입하여 플러그인을 소개하고 사용자 정의하고 삭제하기 전에 수행 중인 작업을 확인하세요. 플러그인을 사용자 정의하려면 이 문서를 참조하세요. <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
+            - | # jsdelivr 정지 방지 스크립트, 출처: https://github.com/PipecraftNet/jsdelivr-auto-fallback/blob/0.2.2/index.min.js
               <script>
                 (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
               </script>
-            - | # 自定义主题色（水野爱蓝），可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
+            - | # <https://www.runoob.com/cssref/css-colornames.html>에 따라 선택할 수 있는 테마 색상(Mizuno Ai Blue)을 사용자 정의하세요.
               <style>
-                .theme-base-07 {
-                  --theme-base-color: DarkSlateBlue;
+                .theme-base-0f {
+                  --theme-base-color: MidnightBlue;
                 }
               </style>
-            - | # 一些页面优化标签，看不懂可跳过
+            - | # 일부 페이지 최적화 태그는 이해하지 못하는 경우 건너뛸 수 있습니다.
               <meta
                 name="viewport"
                 content="width=device-width,minimum-scale=1,initial-scale=1"
@@ -285,27 +275,27 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 title="RSS"
                 type="application/rss+xml"
               />
-            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
+            - | # 작은 웹사이트 아이콘은 자신의 사진으로 대체할 수 있습니다. href에서 해당 부분을 변경하면 됩니다.
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+                href="https://avatars.githubusercontent.com/u/112746031?v=4"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+                href="https://avatars.githubusercontent.com/u/112746031?v=4"
               />
-            - | # 来自lanyon的页面样式，不要改
+            - | # lanyon의 페이지 스타일, 변경하지 마세요
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
               />
-            - | # fontawesome图标；标题和引用之前插一个图标
+            - | # Fontawesome 아이콘, 제목과 인용문 앞에 아이콘 삽입
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css"
               />
-            - | # 侧边栏放缩修正
+            - | # 사이드바 확대/축소 수정
               <style>
                 .wrap {
                   transition-property: width,background-size,transform;
@@ -323,7 +313,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # <https://zenozeng.github.io/fonts.css/>，跨平台中文字体解决方案
+            - | # <https://zenozeng.github.io/fonts.css/>，크로스 플랫폼 중국어 글꼴 솔루션
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fontsource/courier-prime@4.5.9/index.min.css"
@@ -341,14 +331,14 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   font-family: "Courier Prime", "Courier New", "Courier", "Noto Sans Mono", "Noto Serif TC", "Noto Serif SC", "Noto Serif CJK TC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STZhongsong, STSong, "Songti SC", "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, monospace;
                 }
               </style>
-            - | # 修复行内图片默认样式
+            - | # 인라인 이미지의 기본 스타일 수정
               <style>
                 img {
                   display: inline-block;
                   margin: 0;
                 }
               </style>
-            - | # 自定义滚动条，仅对Chrome系浏览器生效
+            - | # 맞춤 스크롤 막대는 Chrome 브라우저에만 유효합니다
               <style>
                 ::-webkit-scrollbar {
                   width: 3px;
@@ -358,7 +348,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-color: Gray;
                 }
               </style>
-            - | # 防止代码块过长
+            - | # 코드 블록이 너무 길지 않도록 방지
               <style>
                 @media only screen {
                   pre {
@@ -372,7 +362,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # 链接样式修正
+            - | # 링크 스타일 수정
               <style>
                 .container a,
                 .related-posts li a:hover {
@@ -382,10 +372,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
               </style>
         page:
-          title: # 为每个页面自动生成一个 H1 title
+          title: # 각 페이지에 대한 H1 제목 자동 생성
             enable: true
           prepend:
-            - | # 标题和引用前插一个图标
+            - | # 제목과 인용문 앞에 아이콘 삽입
               <style>
                 h1::before,
                 h2::before,
@@ -402,20 +392,20 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
                 blockquote::before { content: "\f10d"; }
               </style>
-            - | # 选中字体颜色
+            - | # 글꼴 색상 선택
               <style>
                 ::selection {
                   color: White;
                   background: Black;
                 }
               </style>
-            - | # 调整标题样式
+            - | # 제목 스타일 조정
               <style>
                 h1, h2, h3, h4, h5, h6 {
                   margin: 2rem 0rem 1rem 0rem;
                 }
               </style>
-            - | # 表格样式美化
+            - | # 테이블 스타일의 미화
               <style>
                 td,
                 th {
@@ -436,13 +426,13 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   width: 100%;
                 }
               </style>
-            - | # 列表项增加行距
+            - | # 테이블 항목의 줄 간격 늘리기
               <style>
                 .content li {
                   margin: .25rem;
                 }
               </style>
-            - | # 首行缩进2字符
+            - | # 첫 번째 줄을 2자씩 들여씁니다.
               <style>
                 p {
                   text-indent: 2rem;
@@ -451,7 +441,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   max-width: calc(100% - 4rem);
                 }
               </style>
-            - | # 增加宽屏下的显示内容
+            - | # 와이드스크린에서 디스플레이 콘텐츠 늘리기
               <style>
                 .container {
                   min-width: 66.6%;
@@ -474,7 +464,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 enable: true
                 key: $
               append:
-                | # 对KaTeX过长公式渲染超出页面的修正，感谢[@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/13)
+                | # 페이지를 초과하는 긴 수식의 KaTeX 렌더링 수정[@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/13)
                 <link
                   rel="stylesheet"
                   href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
@@ -546,91 +536,93 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 ></script>
             - smart_include:
                 enable: false
-              append: | # 引入live2d看板娘！不需要可以把这一项都删掉
-                <link
-                  rel="stylesheet"
-                  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
-                />
-                <style>
-                  @media only print {
-                    .pio-container {
-                      display: none;
-                    }
-                  }
-                </style>
-                <script
-                  async="async"
-                  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
-                  onload='
-                    let pio_container = document.createElement("div");
-                    pio_container.classList.add("pio-container");
-                    pio_container.classList.add("right");
-                    pio_container.style.bottom = "-2rem";
-                    pio_container.style.zIndex = "1";
-                    document.body.insertAdjacentElement("beforeend", pio_container);
-                    let pio_action = document.createElement("div");
-                    pio_action.classList.add("pio-action");
-                    pio_container.insertAdjacentElement("beforeend", pio_action);
-                    let pio_canvas = document.createElement("canvas");
-                    pio_canvas.id = "pio";
-                    pio_canvas.style.width = "14rem";
-                    pio_canvas.width = "600";
-                    pio_canvas.height = "800";
-                    pio_container.insertAdjacentElement("beforeend", pio_canvas);
-                    let pio = new Paul_Pio({
-                      "mode": "fixed",
-                      "hidden": true,
-                      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
-                      "content": {
-                        "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
-                        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
-                        "hidden": true,
-                        "custom": [{
-                          "selector": "a",
-                          "type": "link",
-                        }, {
-                          "selector": ".sidebar-toggle",
-                          "text": "打开侧边栏叭~"
-                        }, {
-                          "selector": ".effect-info",
-                          "text": "哇，你发现了什么！"
-                        }, {
-                          "selector": "#sidebar-search-input",
-                          "text": "想搜索什么呢？很多干货哦！"
-                        }, {
-                          "selector": "#toc",
-                          "text": "这是目录~"
-                        }, {
-                          "selector": ".page-title",
-                          "text": "这是标题~"
-                        }]
-                      },
-                      "model": [
-                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
-                    });'
-                ></script>
+#              append: | # live2d 빌보드걸을 소개합니다! 이 항목이 필요하지 않으면 삭제할 수 있습니다.
+#                <link
+#                  rel="stylesheet"
+#                  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+#                />
+#                <style>
+#                  @media only print {
+#                    .pio-container {
+#                      display: none;
+#                    }
+#                  }
+#                </style>
+#                <script
+#                  async="async"
+#                  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+#                  onload='
+#                    let pio_container = document.createElement("div");
+#                    pio_container.classList.add("pio-container");
+#                    pio_container.classList.add("right");
+#                    pio_container.style.bottom = "-2rem";
+#                    pio_container.style.zIndex = "1";
+#                    document.body.insertAdjacentElement("beforeend", pio_container);
+#                    let pio_action = document.createElement("div");
+#                    pio_action.classList.add("pio-action");
+#                    pio_container.insertAdjacentElement("beforeend", pio_action);
+#                    let pio_canvas = document.createElement("canvas");
+#                    pio_canvas.id = "pio";
+#                    pio_canvas.style.width = "14rem";
+#                    pio_canvas.width = "600";
+#                    pio_canvas.height = "800";
+#                    pio_container.insertAdjacentElement("beforeend", pio_canvas);
+#                    let pio = new Paul_Pio({
+#                      "mode": "fixed",
+#                      "hidden": true,
+#                    "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+#                      "content": {
+#                        "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+#                        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+#                        "hidden": true,
+#                        "custom": [{
+#                          "selector": "a",
+#                          "type": "link",
+#                        }, {
+#                          "selector": ".sidebar-toggle",
+#                          "text": "打开侧边栏叭~"
+#                        }, {
+#                          "selector": ".effect-info",
+#                          "text": "哇，你发现了什么！"
+#                        }, {
+#                          "selector": "#sidebar-search-input",
+#                          "text": "想搜索什么呢？很多干货哦！"
+#                        }, {
+#                          "selector": "#toc",
+#                          "text": "这是目录~"
+#                        }, {
+#                          "selector": ".page-title",
+#                          "text": "这是标题~"
+#                        }]
+#                      },
+#                      "model": [
+#                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
+#                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
+#                    });'
+#                ></script>
         post:
-          date: # 显示博文时间
+          date: # 블로그 시간 표시
             enable: true
             prepend: <i class="fa-solid fa-calendar-day fa-fw"></i>
-          wordcount: # 统计全文字数
+          wordcount: # 총 단어 수를 센다
             enable: true
             prepend: <i class="fa-solid fa-file-word fa-fw"></i>
-            unit: 字
-          readtime: # 计算文章阅读时间
+            unit: 자
+          readtime: # 기사 읽기 시간 계산
             enable: true
             prepend: <i class="fa-solid fa-clock fa-fw"></i>
-            unit: 分
-            divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
+            unit: 분
+            divided_by: 300 # 보통 사람의 읽기 속도는 분당 약 300 단어입니다.
           copyright:
-            | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
+            | # 내 기사는 가장 느슨한 크리에이티브 커먼즈 라이센스인 Attribution 4.0 International(CC BY 4.0)에 따라 라이센스가 부여됩니다. 
+            #귀하는 자유롭게 이 저작물을 공유 - 모든 매체 및 형식으로 복사 및 배포할 수 있으며, 수행 - 이 저작물을 기반으로 수정, 변환 또는 생성할 수 있으며, 어떠한 목적, 심지어 상업적 목적으로도 가능합니다. 귀하가 라이센스 계약 조건을 준수하는 한 라이센스 제공자는 귀하로부터 이러한 권리를 박탈할 수 없습니다. 
+            #다음 조건이 적용됩니다: 귀속 — 귀하는 적절한 귀속을 제공하고, 본 라이센스에 대한 링크를 제공하고, 변경이 이루어졌는지 여부를 표시해야 합니다. 귀하는 합리적인 방식으로 신용을 제공할 수 있지만 어떤 방식으로든 라이센스 제공자가 귀하 또는 귀하의 사용을 보증한다는 것을 암시해서는 안 됩니다.
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
             <a
@@ -638,50 +630,50 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               rel="license">
               CC BY 4.0
             </a>
-            （除特别声明或转载文章外）
+            （특별한 진술이나 재인쇄된 기사를 제외하고）
             <br/>
             <i class="fa-solid fa-coffee fa-fw"></i>
-            <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
-        merger: # 打赏页，需要配置！
-          append_to_head:
-            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-              <script>
-                var myname = "WuK";
-                var profile = "i@wu-kan.cn";
-                var usage = "payment";
-                var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
-                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
-                var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
-                var paypal = "https://paypal.me/wukan0621";
-                var multilingual = false;
-                var branding = false;
-                var title = "选择你的支付方式";
-                var subtitle = "跟随进一步的指示以向" + myname + "付款";
-                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                var gravatar_url = "https://gravatar.loli.net/avatar/";
-              </script>
-            - |
-              <meta
-                charset="utf-8"
-              />
-              <meta
-                name="viewport"
-                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-              />
-              <meta
-                http-equiv="Content-Security-Policy"
-                content="upgrade-insecure-requests"
-              />
-            - | # merger的页面样式
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-        home: # 展示页的配置可跳过，详见<https://revealjs.com/>
+            <a href="/merger/">블로그가 도움이 되셨다면 커피 한잔 사주세요~</a>
+#        merger: # 보상 페이지 구성이 필요합니다!
+#          append_to_head:
+#            - | # 구성해야 하는 변수는 다음을 참조하세요.<https://merger.justhx.com/cn/docs/configure>
+#              <script>
+#                var myname = "WuK";
+#                var profile = "i@wu-kan.cn";
+#                var usage = "payment";
+#                var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
+#                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
+#                var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
+#                var paypal = "https://paypal.me/wukan0621";
+#                var multilingual = false;
+#                var branding = false;
+#                var title = "选择你的支付方式";
+#                var subtitle = "跟随进一步的指示以向" + myname + "付款";
+#                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+#                var gravatar_url = "https://gravatar.loli.net/avatar/";
+#              </script>
+#            - |
+#              <meta
+#                charset="utf-8"
+#              />
+#              <meta
+#                name="viewport"
+#                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+#              />
+#              <meta
+#                http-equiv="Content-Security-Policy"
+#                content="upgrade-insecure-requests"
+#              />
+#            - | # merger페이지 스타일
+#              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
+#              <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
+#              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+        home: # 디스플레이 페이지 구성은 건너뛸 수 있습니다. 자세한 내용은 다음을 참조하세요<https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
-            - key: data-separator # 水平展示页分隔符
+            - key: data-separator # 가로 표시 페이지 구분 기호
               value: <!-- .slide -->
-            - key: data-separator-vertical # 垂直展示页分隔符
+            - key: data-separator-vertical # 세로 표시 페이지 구분 기호
               value: <!-- .slide vertical=true -->
             - key: data-background-color
               value: "White"
@@ -721,50 +713,49 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
 
 compress_html: # <https://github.com/penibelst/jekyll-compress-html>
   clippings: all
-  comments: [] # 注释不能压缩，否则 reveal.js 的 ppt切屏受影响
+  comments: [] # 댓글은 압축할 수 없습니다. 압축하지 않으면 공개.js의 ppt 화면 전환에 영향을 미칩니다.
   endings: all
   ignore:
-    envs: all # 暂时关掉页面压缩
+    envs: all # 일시적으로 페이지 압축 끄기
   blanklines: false
   profile: false
   startings: []
 
-# githubpage上支持的插件见<https://pages.github.com/versions/>
+# githubpage지원되는 플러그인을 확인하세요.见<https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
-  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
-  - jekyll-default-layout # 为每个markdown自动生成layout
-  - jekyll-seo-tag # 为每个页面生成标题
-  - jekyll-sitemap # 为站点生成站点地图
-  - jekyll-feed # 为站点生成RSS源
-  - jekyll-redirect-from # 站点页面重定向
-  - jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离，详见<https://github.com/benbalter/jekyll-remote-theme/>
+  - jekyll-readme-index # 렌더링 효과가 github과 일치하도록 readme를 색인으로 사용하십시오.
+  - jekyll-default-layout # 각 마크다운에 대한 레이아웃 자동 생성
+  - jekyll-seo-tag # 각 페이지의 제목 생성
+  - jekyll-sitemap # 사이트에 대한 사이트맵 생성
+  - jekyll-feed # 사이트에 대한 RSS 피드 생성
+  - jekyll-redirect-from # 사이트 페이지 리디렉션
+  - jekyll-remote-theme # 테마의 앞면과 뒷면을 분리하려면 Remote_theme 플러그인을 사용하세요.<https://github.com/benbalter/jekyll-remote-theme/>
 
-remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0 #使用固定版本号以防止主题更新导致站点显示错乱
+remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0 #테마 업데이트로 인해 사이트가 잘못 표시되는 것을 방지하려면 고정 버전 번호를 사용하세요.
 
-readme_index: # 缺失index.md和index.html时，使用README.md代替之
-  with_frontmatter: true # 支持带有yaml头的README
+readme_index: # index.md와 index.html이 누락된 경우 README.md를 사용하여 교체하세요.
+  with_frontmatter: true # yaml 헤더로 README 지원
 
 webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
   google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-  baidu: szbTSfUGAB
 
 permalink: pretty
-# timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
-future: true # 允许发布时间在未来的文章
+# timezone: Asia/Shanghai # githubpage에서 잘못된 표시 시간 문제 해결, 참조<https://www.iana.org/time-zones>
+future: true # 향후 게시 예정인 기사를 허용합니다.
 
-# limit_posts: 999 # 限制博文数量
+# limit_posts: 999 # 블로그 게시물 수를 제한하세요
 # encoding: utf-8
 
 markdown: kramdown
-kramdown: # 见<https://kramdown.gettalong.org/options.html>
+kramdown: # 참조<https://kramdown.gettalong.org/options.html>
   input: GFM # 见<http://jekyllcn.com/docs/configuration/#kramdown>
-  syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
+  syntax_highlighter_opts: # <https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
     block:
       disable: false
-      line_numbers: false #渲染出来的效果好鬼畜
+      line_numbers: false #렌더링 효과가 굉장하네요
     span:
       disable: false
-# 以下为 githubpage上不可修改的参数，见<https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
+# 다음은 githubpage에서 수정할 수 없는 매개변수입니다.<https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
 #lsi: false # 为相关文章生成索引
 #safe: true # 禁用自定义插件
 #source: [your repo's top level directory] # Jekyll 读取文件的路径
