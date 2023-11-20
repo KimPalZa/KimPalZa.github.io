@@ -166,16 +166,16 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/> 기
                   <i class="fa-solid fa-cog fa-spin fa-fw"></i>
                   <span id="run_time_day">
                     <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>天
+                  </span>일
                   <span id="run_time_hour">
                     <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>时
+                  </span>시간
                   <span id="run_time_minute">
                     <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>分
+                  </span>분
                   <span id="run_time_second">
                     <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>秒
+                  </span>초
                   <script>
                     setInterval(function (d,h,m,s,b) {
                       function setzero(i) {
