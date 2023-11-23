@@ -26,7 +26,7 @@ We know what we are, but not what we may be.
 
 <!-- .slide vertical=true -->
 
-- [군대군](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Star](https://img.shields.io/github/stars/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Fork](https://img.shields.io/github/forks/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind/fork)
+- [군대군데](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Star](https://img.shields.io/github/stars/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Fork](https://img.shields.io/github/forks/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind/fork)
   - 장병들의 윤택한 외출, 외박을 위한 플레이스 추천 플랫폼 [군대군데]
   - DB구축, 앱개발
 
