@@ -204,7 +204,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/> 기
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "12/09/2023 23:42:42")// 이제 첫 번째 CSDN 블로그를 만들 시간입니다.
+                    "11/22/2023 22:42:42")// 이제 첫 번째 CSDN 블로그를 만들 시간입니다.
                   </script>
                 </div>
               - | # 페이지 통계가 없습니다. 이해가 되지 않으면 변경하지 마세요.
