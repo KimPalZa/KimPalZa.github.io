@@ -620,20 +620,18 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/> 기
             unit: 분
             divided_by: 300 # 보통 사람의 읽기 속도는 분당 약 300 단어입니다.
           copyright:
-            | # 내 기사는 가장 느슨한 크리에이티브 커먼즈 라이센스인 Attribution 4.0 International(CC BY 4.0)에 따라 라이센스가 부여됩니다. 
-            #귀하는 자유롭게 이 저작물을 공유 - 모든 매체 및 형식으로 복사 및 배포할 수 있으며, 수행 - 이 저작물을 기반으로 수정, 변환 또는 생성할 수 있으며, 어떠한 목적, 심지어 상업적 목적으로도 가능합니다. 귀하가 라이센스 계약 조건을 준수하는 한 라이센스 제공자는 귀하로부터 이러한 권리를 박탈할 수 없습니다. 
-            #다음 조건이 적용됩니다: 귀속 — 귀하는 적절한 귀속을 제공하고, 본 라이센스에 대한 링크를 제공하고, 변경이 이루어졌는지 여부를 표시해야 합니다. 귀하는 합리적인 방식으로 신용을 제공할 수 있지만 어떤 방식으로든 라이센스 제공자가 귀하 또는 귀하의 사용을 보증한다는 것을 암시해서는 안 됩니다.
+            | #가 귀하 또는 귀하의 사용을 보증한다는 것을 암시해서는 안 됩니다.
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
             <a
-              href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+              href="https://creativecommons.org/licenses/by/4.0/deed.ko"
               rel="license">
               CC BY 4.0
             </a>
-            （특별한 진술이나 재인쇄된 기사를 제외하고）
+            （일부 특수한 글이나 재인쇄된 기사를 제외하고）
             <br/>
-            <i class="fa-solid fa-coffee fa-fw"></i>
-            <a href="/merger/">블로그가 도움이 되셨다면 커피 한잔 사주세요~</a>
+#            <i class="fa-solid fa-coffee fa-fw"></i>
+#            <a href="/merger/">블로그가 도움이 되셨다면 커피 한잔 사주세요~</a>
 #        merger: # 보상 페이지 구성이 필요합니다!
 #          append_to_head:
 #            - | # 구성해야 하는 변수는 다음을 참조하세요.<https://merger.justhx.com/cn/docs/configure>
