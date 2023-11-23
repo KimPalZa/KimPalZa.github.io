@@ -22,28 +22,19 @@ We know what we are, but not what we may be.
 
 <!-- .slide -->
 
-<!---
 ## Projects
--->
 
 <!-- .slide vertical=true -->
 
-<!--
-- [HPL-AI](https://wu-kan.cn/2021/03/14/HPL-AI/)[![Star](https://img.shields.io/github/stars/wu-kan/HPL-AI.svg)](https://github.com/wu-kan/HPL-AI)[![Fork](https://img.shields.io/github/forks/wu-kan/HPL-AI.svg)](https://github.com/wu-kan/HPL-AI/fork)
-  - An implementation of HPL-AI Mixed-Precision Benchmark based on hpl-2.3.
-  - Graduation design for undergraduate thesis.
--->
+- [군대군](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Star](https://img.shields.io/github/stars/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)[![Fork](https://img.shields.io/github/forks/osamhack2022/WEB_APP_Goondae-goonde_Open-mind)](https://github.com/osamhack2022/WEB_APP_Goondae-goonde_Open-mind/fork)
+  - 장병들의 윤택한 외출, 외박을 위한 플레이스 추천 플랫폼 [군대군데]
+  - DB구축, 앱개발
 
 <!-- .slide -->
 
-<!--
 ## Experience
 
-- Teach Assistant of Compilation Principle, [Feb. 2022 - Jun. 2022](https://xianweiz.github.io/teach/dcs290/s2022.html)
-- Teach Assistant of Computer System Organization, Sep. 2021 - Jan. 2022 , Sep. 2022 - Jan. 2023 (expected)
-- Intern of Inference Engine, Speech & Audio Team (Beijing), Bytedance AI Lab, Feb. 2021 - Aug. 2021
-- Leader of [SYSU-SCC](https://github.com/SYSU-SCC), Mar. 2020 - Jul. 2021
--->
+- Korea Army C.D.C. First Air Defence [Jan. 2021 - Jul. 2023]
 
 <!-- .slide -->
 
