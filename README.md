@@ -1,4 +1,4 @@
-# PalZa Shift!
+# Paradigm Shift!
 
 We know what we are, but not what we may be.
 Undergraduate student with a interest in neural implantable devices.
@@ -8,12 +8,12 @@ Undergraduate student with a interest in neural implantable devices.
 ## Contact
 
 - Site
-  - **<https://palza/org>**
+  - **<https://kimpalza.github.io>**
     
 - [Github](https://github.com/KimPalZa)
 
 - E-mail:
-  - **[me[at]palza.org](mailto:me@palza.org)**
+  - **[swpark.inu[at]gmail.com](mailto:swpark.inu@gmail.com)**
   - **[paradigm[at]inu.ac.kr](mailto:paradigm@inu.ac.kr)**
 
 <!-- .slide -->
